@@ -1,0 +1,16 @@
+FOR EACH:
+var json = [{
+    "id" : "raja1", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "rajarat6@gmail.com"
+},
+{
+    "id" : "raja2", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "rajarat6@gmail.com"
+}];
+
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
