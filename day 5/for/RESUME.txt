@@ -1,0 +1,53 @@
+RESUME:
+
+let myResume={
+    "basics": {
+      "name": "kishore R",
+      "email": "kishoreramesh1610@gmail.com",
+      "phone": 6379750533,
+      "degree": "B.E",
+      "location": {
+        "address": "51/1 thuvarapalayam,manmangalam",
+        "postalCode": 600030,
+        "city": "karur",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/rajarajan-t-685958219/",
+          "github":"https://github.com/RAJARAJAN-RT"
+        }
+      ]
+    },
+    "education": [
+      {
+        "institution": "grd clg of science",
+        "department": "bca",
+        "studyType": "fulltime",
+        "batch start year": 2020,
+        "batch end year": 2023,
+        "gpa": 7.5,
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "level": "beginer",
+        "project": [
+          "work based employee system"
+        ]
+   }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "script writter,youtuber,",
+      }
+    ]
+  }
+  console.log(myResume);
