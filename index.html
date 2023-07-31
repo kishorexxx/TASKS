@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Survey Form</title>
+  <title>Event Ticket Booking</title>
 </head>
 <body>
-  <h1>Simple Survey</h1>
-  <form action="process_survey.php" method="POST">
+  <h1>Event Ticket Booking</h1>
+  <form action="process_booking.php" method="POST">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required><br>
 
     <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required><br>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" min="18" max="99" required><br>
+    <label for="event">Event Name:</label>
+    <select id="event" name="event" required>
+      <option value="" disabled selected>Select an Event</option>
+      <option value="event1">Event 1</option>
+      <option value="event2">Event 2</option>
+      <option value="event3">Event 3</option>
+      <!-- Add more events here -->
+    </select><br>
 
-    <label for="gender">Gender:</label>
-    <input type="radio" id="male" name="gender" value="male" required>
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label><br>
+    <label for="tickets">Number of Tickets:</label>
+    <input type="number" id="tickets" name="tickets" min="1" required><br>
 
-    <label for="feedback">Feedback:</label><br>
-    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br>
-
-    <input type="submit" value="Submit">
+    <input type="submit" value="Book Tickets">
   </form>
 </body>
 </html>
